@@ -74,6 +74,11 @@
             <path d="m9 12 2 2 4-4" />
         </symbol>
 
+        <symbol id="icon-check-circle-reverse" viewBox="0 0 24 24">
+            <circle fill="currentColor" stroke="none" cx="12" cy="12" r="10" />
+            <path fill="none" stroke="white" d="m9 12 2 2 4-4" />
+        </symbol>
+
         <symbol id="icon-target" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10" />
             <circle cx="12" cy="12" r="6" />
@@ -141,8 +146,58 @@
             <path d="M20 6 9 17l-5-5" />
         </symbol>
 
-        <symbol id="icon-" viewBox="0 0 24 24">
+        <symbol id="icon-star-fill" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+        </symbol>
 
+        <symbol id="icon-star" viewBox="0 0 24 24">
+            <path
+                d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+        </symbol>
+
+        <symbol id="icon-users" viewBox="0 0 24 24">
+            <path d="M18 21a8 8 0 0 0-16 0" />
+            <circle cx="10" cy="8" r="5" />
+            <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
+        </symbol>
+
+        <symbol id="icon-user" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="5" />
+            <path d="M20 21a8 8 0 0 0-16 0" />
+        </symbol>
+
+        <symbol id="icon-file" viewBox="0 0 24 24">
+            <path
+                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+            <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+            <path d="M10 9H8" />
+            <path d="M16 13H8" />
+            <path d="M16 17H8" />
+        </symbol>
+
+        <symbol id="icon-file-pen" viewBox="0 0 24 24">
+            <path
+                d="M14.364 13.634a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506l4.013-4.009a1 1 0 0 0-3.004-3.004z" />
+            <path d="M14.487 7.858A1 1 0 0 1 14 7V2" />
+            <path
+                d="M20 19.645V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l2.516 2.516" />
+            <path d="M8 18h1" />
+        </symbol>
+
+
+        <symbol id="icon-circle" viewBox="0 0 24 24">
+            <circle fill="currentColor" cx="12" cy="12" r="6" />
+        </symbol>
+
+
+        <symbol id="icon-left" viewBox="0 0 24 24">
+            <path d="m15 18-6-6 6-6" />
+        </symbol>
+
+
+        <symbol id="icon-right" viewBox="0 0 24 24">
+            <path d="m9 18 6-6-6-6" />
         </symbol>
     </svg>
 
@@ -204,7 +259,7 @@
     <section class="hero">
         <div class="hero-main">
             <div>
-                <div class="tag">AI-Powered IELTS Preperation Platform</div>
+                <div class="tag blue">AI-Powered IELTS Preperation Platform</div>
                 <div class="title">
                     Master IELTS<br> with Al.
 
@@ -325,260 +380,759 @@
                 </div>
             </div>
         </div>
-        <div class="feature-container glass">
-            <div class="feature-card card-line">
-                <svg class="icon icon-lg">
-                    <use href="#icon-robot"></use>
-                </svg>
-                <div class="description">
-                    <div class="description-title">
-                        Al That Evaluates <br> Like an Examiner
-                    </div>
-                    <div>
-                        Accurate band scores with<br>
-                        detailed feedback aligned<br>to IELTS standards.
-                    </div>
-                </div>
-            </div>
 
-            <div class="feature-card card-line">
+        <div class="user-rating">
+            <div class="avatar">
                 <svg class="icon icon-lg">
-                    <use href="#icon-target"></use>
+                    <use href="#icon-user"></use>
                 </svg>
-                <div class="description">
-                    <div class="description-title">
-                        Real Exam Simulation
-                    </div>
-                    <div>
-                        Practice exactly like the real test same format,
-                        difficultty, and timing.
-                    </div>
-                </div>
             </div>
-
-            <div class="feature-card card-line">
+            <div class="avatar">
                 <svg class="icon icon-lg">
-                    <use href="#icon-lightning"></use>
+                    <use href="#icon-user"></use>
                 </svg>
-                <div class="description">
-                    <div class="description-title">
-                        Instant Improvement Insights
-                    </div>
-                    <div>
-                        Know exactly where you're losing marks and how to improve faster.
-                    </div>
-                </div>
             </div>
-
-            <div class="feature-card">
+            <div class="avatar">
                 <svg class="icon icon-lg">
-                    <use href="#icon-globe"></use>
+                    <use href="#icon-user"></use>
                 </svg>
-                <div class="description">
-                    <div class="description-title">
-                        Learn From Anywhere
-                    </div>
-                    <div>
-                        Accessible globally.<br> Practice on any device, anytime.
+            </div>
+            <div class="avatar">
+                <svg class="icon icon-lg">
+                    <use href="#icon-user"></use>
+                </svg>
+            </div>
+            <div class="avatar last">
+                <svg class="icon icon-lg">
+                    <use href="#icon-user"></use>
+                </svg>
+            </div>
+            <div>
+                <div class="stars">
+                    <svg class="icon icon-sm">
+                        <use href="#icon-star-fill"></use>
+                    </svg>
+                    <svg class="icon icon-sm">
+                        <use href="#icon-star-fill"></use>
+                    </svg>
+                    <svg class="icon icon-sm">
+                        <use href="#icon-star-fill"></use>
+                    </svg>
+                    <svg class="icon icon-sm">
+                        <use href="#icon-star-fill"></use>
+                    </svg>
+                    <svg class="icon icon-sm">
+                        <use href="#icon-star-fill"></use>
+                    </svg>
+
+                    <div class="rating">
+                        4.9/5
                     </div>
                 </div>
+
+                From 50,000+ learners worldwide
             </div>
         </div>
-    </section>
 
-    <section class="main-content">
-        <div class="feature-title-1">Everything You Need To Succeed</div>
-        <div class="feature-title-2">Powerful Features.<span>Better Results.</span></div>
-        <section class="service-card-container">
-            <div class="service-card">
+        <section class="service-card-container glass">
+            <div class="service-card glass">
                 <svg class="icon icon-lg indigo">
-                    <use href="#icon-clipboard"></use>
+                    <use href="#icon-robot"></use>
                 </svg>
                 <div class="card-content">
-                    <h3>Free Practice Tests</h3>
-                    <p>Full-length IELTS-style tests for all modules - Reading, Writing. Listening & Speaking.</p>
+                    <h3>Real IELTS Simulation</h3>
+                    <p>Timed tests with real exam experience</p>
                 </div>
+                <div class="indigo">Start Test →</div>
             </div>
 
-            <div class="service-card">
-                <svg class="icon icon-lg blue">
-                    <use href="#icon-ai"></use>
+            <div class="service-card glass">
+                <svg class="icon icon-lg light-blue">
+                    <use href="#icon-file-pen"></use>
                 </svg>
                 <div class="card-content">
-                    <h3>Al Score & Feedback</h3>
-                    <p>Get instant band scores with detailed feedback and smart suggestions.</p>
+                    <h3>Al Writing Evaluation</h3>
+                    <p>Get detailed feedback like a real examiner</p>
                 </div>
+                <div class="light-blue">Try Now →</div>
             </div>
 
-            <div class="service-card">
-                <svg class="icon icon-lg green">
-                    <use href="#icon-video"></use>
-                </svg>
-                <div class="card-content">
-                    <h3>Live Online Classes</h3>
-                    <p>Learn from expert trainers in interactive live sessions.</p>
-                </div>
-            </div>
-
-            <div class="service-card">
+            <div class="service-card glass">
                 <svg class="icon icon-lg orange">
-                    <use href="#icon-book"></use>
+                    <use href="#icon-microphone"></use>
                 </svg>
                 <div class="card-content">
-                    <h3>Study Materials</h3>
-                    <p>Access curated lessons, strategies, sample answers & notes.</p>
+                    <h3>Al Speaking Evaluation</h3>
+                    <p>Natural Al conversation with band score</p>
                 </div>
+                <div class="orange">Start Speaking →</div>
             </div>
-            <div class="service-card">
-                <svg class="icon icon-lg blue">
+
+            <div class="service-card glass">
+                <svg class="icon icon-lg pink">
+                    <use href="#icon-users"></use>
+                </svg>
+                <div class="card-content">
+                    <h3>Live Classes</h3>
+                    <p>Live Classes Learn live with expert IELTS instructors</p>
+                </div>
+                <div class="pink">Join Live Class →</div>
+            </div>
+            <div class="service-card glass">
+                <svg class="icon icon-lg green">
+                    <use href="#icon-lightbolb"></use>
+                </svg>
+                <div class="card-content">
+                    <h3>Personalized Insights</h3>
+                    <p>Al-driven study plan just for you</p>
+                </div>
+                <div class="green">See Insight →</div>
+            </div>
+            <div class="service-card glass">
+                <svg class="icon icon-lg light-green">
                     <use href="#icon-chart"></use>
                 </svg>
                 <div class="card-content">
                     <h3>Progress Tracking</h3>
-                    <p>Track your progress with smart analytics and performance reports.</p>
+                    <p>Track your band score improvement</p>
                 </div>
-            </div>
-            <div class="service-card">
-                <svg class="icon icon-lg pink">
-                    <use href="#icon-lightbolb"></use>
-                </svg>
-                <div class="card-content">
-                    <h3>Expert Guidance</h3>
-                    <p>Learn proven strategies. and get guidance from IELTS experts.</p>
-                </div>
+                <div class="light-green">View Progress →</div>
             </div>
         </section>
-        <div class="plan-title">Choose A Plan That Suits You</div>
-        <section class="plan-container">
-            <div class="plan-card">
-                <div class="flex">
-                    <div class="icon-and-price">
-                        <svg class="icon icon-lg green">
-                            <use href="#icon-gift"></use>
-                        </svg>
-                        <div>
-                            $0
+
+
+    </section>
+
+    <section class="main-content">
+        <div class="feature-container">
+            <div class="feature-description">
+                <div class="tag white">AI EVALUATION</div>
+                <h1>
+                    Al Feedback Like <br> a Real Examiner
+                </h1>
+                <div class="list">
+                    <svg class="icon icon-sm indigo">
+                        <use href="#icon-check-circle"></use>
+                    </svg>
+                    Advanced Al correction
+                </div>
+                <div class="list">
+                    <svg class="icon icon-sm indigo">
+                        <use href="#icon-check-circle"></use>
+                    </svg>
+                    Detailed band descriptors
+                </div>
+                <div class="list">
+                    <svg class="icon icon-sm indigo">
+                        <use href="#icon-check-circle"></use>
+                    </svg>
+                    Grammar & voabulary suggestions
+                </div>
+                <div class="list">
+                    <svg class="icon icon-sm indigo">
+                        <use href="#icon-check-circle"></use>
+                    </svg>
+                    Improve faster with Al insights
+                </div>
+                <button class="feature-btn btn-indigo">Try Al Evaluation Now</button>
+            </div>
+
+            <div class="ai-example">
+                <div class="title">
+                    <h1>Task</h1>
+                    <h2>(286 Words)</h2>
+                </div>
+                Nowadays, many people prefer to study in other countries. <br>
+                What are the advantages and <span class="purple">disadvantage</span> of studying abroad? <br>
+                Some people believes that studying overseas has more benefits <br>
+                than studying in the home country. In my opinion, while there <br>
+                are several <span class="red">advantages</span>, there are also some <span
+                    class="red">disadvantages</span>.<br>
+                One major <span class="red">advantage</span> is that students can experience a new <br>
+                culture and improve their language skills. This helps them <br>
+                become more independent and confident.
+
+                <div class="score">
+                    <div class="left">
+                        <span>Overall Band Score</span>
+                        <div class="progress-circle-wrapper">
+                            <div class="progress-circle" style="--progress: 60%;--track: 70%;--fill: var(--green-icon)">
+                            </div>
+                            <span class="progress-text navy">7.0</span>
+                            <span class="progress-text-sm"> Good</span>
                         </div>
                     </div>
-                    <div class="description">
-                        <div class="title green">
-                            Free Practice
+                    <div class="right">
+                        <div class="individual">
+                            <span>Tesk Achievement</span>
+                            <span>7.0</span>
                         </div>
-                        <div class="subtitle">
-                            Always Free
+                        <div class="individual">
+                            <span>Coherence & Cohesion</span>
+                            <span>7.0</span>
                         </div>
-                        <div class="plan-feature">
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Full-length practice tests
+                        <div class="individual">
+                            <span>Lexical Resource</span>
+                            <span>6.5</span>
+                        </div>
+                        <div class="individual">
+                            <span>Grammatical Range</span>
+                            <span>7.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-feedback">
+                <h2>
+                    AI Feedback
+                </h2>
+                <div>
+                    <div class="list">
+                        <svg class="icon icon-sm indigo">
+                            <use href="#icon-circle"></use>
+                        </svg>
+                        Good introduction and clear opinion.
+                    </div>
+
+                    <div class="list">
+                        <svg class="icon icon-sm indigo">
+                            <use href="#icon-circle"></use>
+                        </svg>
+                        Try to develop your ideas more with examples.
+                    </div>
+
+                    <div class="list">
+                        <svg class="icon icon-sm indigo">
+                            <use href="#icon-circle"></use>
+                        </svg>
+                        Improve the variety of your vocabulary
+                    </div>
+
+                    <div class="list">
+                        <svg class="icon icon-sm indigo">
+                            <use href="#icon-circle"></use>
+                        </svg>
+                        Check article usage and sentence structure.
+                    </div>
+                </div>
+
+                <button class="feature-btn full btn-indigo">View Detailed Feedback</button>
+            </div>
+        </div>
+
+        <div class="feature-container dark-background">
+            <div class="feature-description white">
+                <div class="tag blue">REAL IELTS SIMULATION</div>
+                <h1>
+                    Experience the<br> Real Test Before<br> the Real Test
+                </h1>
+                <div class="list">
+                    <svg class="icon icon-sm indigo">
+                        <use href="#icon-check-circle-reverse"></use>
+                    </svg>
+                    Full-length IELTS tests<br> (Listening, Reading, Writing, Speaking)
+                </div>
+                <div class="list">
+                    <svg class="icon icon-sm indigo">
+                        <use href="#icon-check-circle-reverse"></use>
+                    </svg>
+                    Real exam interface<br> Same format, timing & difficulty
+                </div>
+                <div class="list">
+                    <svg class="icon icon-sm indigo">
+                        <use href="#icon-check-circle-reverse"></use>
+                    </svg>
+                    Instant band score<br> Get results with detailed insights
+                </div>
+                <div class="list">
+                    <svg class="icon icon-sm indigo">
+                        <use href="#icon-check-circle-reverse"></use>
+                    </svg>
+                    Performance analytics<br> Track your progress smartly
+                </div>
+                <button class="feature-btn btn-indigo">Start Full Test Now</button>
+            </div>
+
+            <div class="simulation-example glass ">
+                <h1>Section 2</h1>
+                <p>
+                    Questions 11-20<br><br>
+                    Complete the notes below.<br>
+                    Write NO MORE THAN TWO WORDS for each answer.<br><br>
+                    Example<br>
+                    Q. The new leisure centre is located near the<br>
+                    shopping _____ centre<br>
+                    Answer: Town<br><br>
+
+                    11. The swimming pool has a special<br>
+                    _____ for children.
+                </p>
+            </div>
+
+            <div class="simulation-timer glass">
+                <div>Time Left</div>
+                <div class="progress-circle-wrapper">
+                    <div class="progress-circle"
+                        style="--progress: 50%;--track: 50%;--fill: var(--orange-cta);--background: var(--light-background)">
+                    </div>
+                    <span class="progress-text">25:30</span>
+                </div>
+                <div class="current-progress">
+                    <div>Progress</div>
+                    <div>11/40</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 25%"></div>
+                </div>
+                <button class="feature-btn btn-orange">End Test</button>
+            </div>
+        </div>
+
+        <div class="feature-container">
+            <div class="feature-description">
+                <div class="tag white">LIVE LEARNING</div>
+                <h1>
+                    Learn Live with <br> Expert Instructors
+                </h1>
+                <span>
+                    Join interactive live classes, ask questions, <br>
+                    and improve with real-time guidance. <br>
+                </span>
+                <button class="feature-btn btn-indigo">Join Live Class</button>
+            </div>
+
+            <div class="video-example">
+                <img src="image/live.png">
+            </div>
+
+            <div class="live-class">
+                <h1>Today's Class</h1>
+                <h2>Writing Task 2 Masterclass</h2>
+                <div class="list">
+                    <svg class="icon icon-sm green">
+                        <use href="#icon-check-circle-reverse"></use>
+                    </svg>
+                    Essay structure
+                </div>
+
+                <div class="list">
+                    <svg class="icon icon-sm green">
+                        <use href="#icon-check-circle-reverse"></use>
+                    </svg>
+                    Coherence techniques
+                </div>
+
+                <div class="list">
+                    <svg class="icon icon-sm green">
+                        <use href="#icon-check-circle-reverse"></use>
+                    </svg>
+                    High band vocabulary
+                </div>
+
+                <div class="list">
+                    <svg class="icon icon-sm green">
+                        <use href="#icon-check-circle-reverse"></use>
+                    </svg>
+                    Live practice & feedback
+                </div>
+
+                <div class="flex">
+                    <div class="avatar">
+                        <svg class="icon icon-lg">
+                            <use href="#icon-user"></use>
+                        </svg>
+                    </div>
+                    <div class="avatar">
+                        <svg class="icon icon-lg">
+                            <use href="#icon-user"></use>
+                        </svg>
+                    </div>
+                    <div class="avatar">
+                        <svg class="icon icon-lg">
+                            <use href="#icon-user"></use>
+                        </svg>
+                    </div>
+                    <div class="avatar">
+                        <svg class="icon icon-lg">
+                            <use href="#icon-user"></use>
+                        </svg>
+                    </div>
+                    <div class="avatar last">
+                        <svg class="icon icon-lg">
+                            <use href="#icon-user"></use>
+                        </svg>
+                    </div>
+                    +254 <br>Student Join
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stats-card">
+                <svg class="icon icon-lg blue">
+                    <use href="#icon-users"></use>
+                </svg>
+                <div class="description">
+                    <div class="description-title indigo">
+                        50,000+
+                    </div>
+                    <div>
+                        Happy Students
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <svg class="icon icon-lg green">
+                    <use href="#icon-file"></use>
+                </svg>
+                <div class="description">
+                    <div class="description-title green">
+                        1M+
+                    </div>
+                    <div>
+                        Tests Attempted
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <svg class="icon icon-lg yellow">
+                    <use href="#icon-star"></use>
+                </svg>
+                <div class="description">
+                    <div class="description-title white">
+                        7.5
+                    </div>
+                    <div>
+                        Average Band Score
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <svg class="icon icon-lg pink">
+                    <use href="#icon-target"></use>
+                </svg>
+                <div class="description">
+                    <div class="description-title pink">
+                        95%
+                    </div>
+                    <div>
+                        Success Rate
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <svg class="icon icon-lg blue">
+                    <use href="#icon-globe"></use>
+                </svg>
+                <div class="description">
+                    <div class="description-title blue">
+                        150+
+                    </div>
+                    <div>
+                        Counties
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="user-card-container">
+            <div class="track flex">
+                <div class="user-card">
+                    <div class="flex">
+                        <div class="avatar">
+                            <svg class="icon icon-lg">
+                                <use href="#icon-user"></use>
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <div>
+                                <h1>Emma L.</h1>
+                                <h2>Canada</h2>
                             </div>
-                            <div class="flex">
+                            <div class="stars">
                                 <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
+                                    <use href="#icon-star-fill"></use>
                                 </svg>
-                                Basic performance insights
-                            </div>
-                            <div class="flex">
                                 <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
+                                    <use href="#icon-star-fill"></use>
                                 </svg>
-                                Study materials
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
                             </div>
+                        </div>
+                    </div>
+                    <p>
+                        IntelliDu's Al feedback helped me improve my writing score from 6.0 to 7.5 in just 4 weeks!
+                    </p>
+                    <div class="user-score">Overall 7.5 band</div>
+                </div>
+
+                <div class="user-card">
+                    <div class="flex">
+                        <div class="avatar">
+                            <svg class="icon icon-lg">
+                                <use href="#icon-user"></use>
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <div>
+                                <h1>Rajesh P.</h1>
+                                <h2>India</h2>
+                            </div>
+                            <div class="stars">
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        The speaking Al is amazing! It's like practicing with a real IELTS examiner.
+                    </p>
+                    <div class="user-score">Overall 8.0 band</div>
+                </div>
+
+                <div class="user-card">
+                    <div class="flex">
+                        <div class="avatar">
+                            <svg class="icon icon-lg">
+                                <use href="#icon-user"></use>
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <div>
+                                <h1>Sophie M.</h1>
+                                <h2>Australia</h2>
+                            </div>
+                            <div class="stars">
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                                <svg class="icon icon-sm">
+                                    <use href="#icon-star-fill"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        The real test simulation boosted my confidence and I got my desired band!
+                    </p>
+                    <div class="user-score">Overall 7.0 band</div>
+                </div>
+            </div>
+
+            <div class="scroll-btn">
+                <button class="left-btn">
+                    <svg class="icon icon-sm">
+                        <use href="#icon-left"></use>
+                    </svg>
+                </button>
+                <button class="right-btn">
+                    <svg class="icon icon-sm">
+                        <use href="#icon-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="plan-container">
+            <div>
+                <h1>
+                    CHOOSE YOUR PLAN
+                </h1>
+                <h2>
+                    Affordable Plans<br> for Everyone
+                </h2>
+                <div class="switch">
+                    <button class="switch-btn-month active">Monthly</button>
+                    <button class="switch-btn-year">Yearly (Save 20%)</button>
+                </div>
+            </div>
+            <div class="plan-card">
+                <div class="description">
+                    <div class="title">
+                        Free Plan
+                    </div>
+                    <div class="monthly-content">
+                        <div class="price">
+                            $0
+                        </div>
+                        <div class="cycle">
+                            /month
+                        </div>
+                    </div>
+
+                    <div class="yearly-content hidden">
+                        <div class="price">
+                            $0
+                        </div>
+                        <div class="cycle">
+                            /year
+                        </div>
+                    </div>
+
+                    <div class="plan-feature">
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            10 Free practice questions
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Basic performance insights
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Study materials
+                        </div>
+                    </div>
+                </div>
+                <button class="plan-btn">Get Started</button>
+            </div>
+            <div class="plan-card popular">
+                <div class="description">
+                    <div class="title">
+                        Premiun Plan
+                    </div>
+                    <div class="monthly-content">
+                        <div class="price orange">
+                            $19.9
+                        </div>
+                        <div class="cycle">
+                            /month
+                        </div>
+                    </div>
+                    <div class="yearly-content hidden">
+                        <div class="price orange">
+                            $191.9
+                        </div>
+                        <div class="cycle">
+                            /year
+                        </div>
+                    </div>
+                    <div class="plan-feature">
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Unlimited practice tests
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            AI writing & speaking evaluation
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Personalized study plan
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Live class sessions
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Detaled performance analytics
+                        </div>
+                    </div>
+                </div>
+                <button class="plan-btn popular">Start 7-Day Free Trial</button>
+            </div>
+            <div class="plan-card">
+                <div class="description">
+                    <div class="title">
+                        Pro Plan
+                    </div>
+                    <div class="monthly-content">
+                        <div class="price orange">
+                            $39.9
+                        </div>
+                        <div class="cycle">
+                            /month
+                        </div>
+                    </div>
+                    <div class="yearly-content hidden">
+                        <div class="price orange">
+                            $383.9
+                        </div>
+                        <div class="cycle">
+                            /year
+                        </div>
+                    </div>
+                    <div class="plan-feature">
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Everything in Premium
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Priority Al evaluation
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            One-on-one mentorship
+                        </div>
+                        <div class="flex">
+                            <svg class="icon icon-sm">
+                                <use href="#icon-check"></use>
+                            </svg>
+                            Advance AI insights
                         </div>
                     </div>
                 </div>
 
-                <button class="plan-btn btn-green">Start Free</button>
-            </div>
-            <div class="plan-card">
-                <div class="flex">
-                    <div class="icon-and-price">
-                        <svg class="icon icon-lg blue">
-                            <use href="#icon-tv"></use>
-                        </svg>
-                        <div>
-                            $49
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="title blue">
-                            Live Classes
-                        </div>
-                        <div class="plan-feature">
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Live interactive classes
-                            </div>
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Expert trainers
-                            </div>
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Doubt solving sessions
-                            </div>
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Class recordings
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="plan-btn btn-blue">Join Live Classes</button>
-            </div>
-            <div class="plan-card">
-                <div class="flex">
-                    <div class="icon-and-price">
-                        <svg class="icon icon-lg purple">
-                            <use href="#icon-crown"></use>
-                        </svg>
-                        <div>
-                            $99
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="title purple">
-                            Premium
-                        </div>
-                        <div class="plan-feature">
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Everything in Live Classes
-                            </div>
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Advanced Al evaluation
-                            </div>
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Premium study materials
-                            </div>
-                            <div class="flex">
-                                <svg class="icon icon-sm">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                                Priority support
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="plan-btn btn-purple">Go Premium</button>
+                <button class="plan-btn ">Start 7-Day Free Trial</button>
             </div>
         </section>
     </section>
