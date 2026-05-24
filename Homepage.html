@@ -6,6 +6,7 @@
     <script src="Homepage.js" defer></script>
     <link rel="stylesheet" href="Homepage.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="background">
@@ -199,11 +200,16 @@
         <symbol id="icon-right" viewBox="0 0 24 24">
             <path d="m9 18 6-6-6-6" />
         </symbol>
+
+        <symbol id="icon-menu" viewBox="0 0 24 24">
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+        </symbol>
     </svg>
 
 
-    <header class="flex justify-between items-center">
-
+    <header>
         <img src="image/logo-white.png" class="logo">
 
         <nav class="hidden md:flex">
@@ -247,18 +253,67 @@
 
         </nav>
 
-        <div class="flex items-center">
+        <div class="login">
             <a href="#" class="nav-button">Login</a>
             <div class="cta-btn cta-btn-sm">
                 <a href="#">Sign Up</a>
             </div>
         </div>
 
+        <div class="hamburger-menu">
+            <button id="menuBtn" class="md:hidden flex items-center">
+                <svg class="icon icon-sm">
+                    <use href="#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="md:hidden hidden flex flex-col gap-4 p-4 mobile-menu white">
+            <button id="closeMenu" class="close-btn">✕</button>
+
+            <div class="mobile-nav">
+                <a href="#">Home</a>
+                <div class="mobile-dropdown">
+                    <button class="dropdown-btn">Practice Tests</button>
+                    <div class="collapsible-content">
+                        <a href="#">Full Mock Test</a>
+                        <a href="#">Listening Test</a>
+                        <a href="#">Reading Test</a>
+                        <a href="#">Writing Test</a>
+                        <a href="#">Speaking Test</a>
+                    </div>
+                </div>
+                <div class="mobile-dropdown">
+                    <button class="dropdown-btn">Live Learning</button>
+                    <div class="collapsible-content">
+                        <a href="#">Live Classes</a>
+                        <a href="#">Speaking Partner</a>
+                        <a href="#">Forum</a>
+                        <a href="#">Daily Challenge</a>
+                    </div>
+                </div>
+                <div class="mobile-dropdown">
+                    <button class="dropdown-btn">AI Study Resources</button>
+                    <div class="collapsible-content">
+                        <a href="#">Study Plan</a>
+                        <a href="#">Grammar Trainer</a>
+                        <a href="#">Writing Topics</a>
+                        <a href="#">Tips</a>
+                    </div>
+                </div>
+
+                <a href="#">Skillshift</a>
+                <a href="#">Shop</a>
+                <hr>
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+            </div>
+
     </header>
 
     <section class="hero">
         <div class="hero-main">
-            <div>
+            <div class="main-left">
                 <div class="tag blue">AI-Powered IELTS Preperation Platform</div>
                 <div class="title">
                     Master IELTS<br> with Al.
@@ -284,7 +339,7 @@
                         Check Your Band Score
                     </a>
                 </div>
-                <div class="flex">
+                <div class="features-container">
                     <svg class="icon icon-sm">
                         <use href="#icon-check-circle"></use>
                     </svg>
@@ -841,7 +896,7 @@
         </div>
 
         <section class="user-card-container">
-            <div class="track flex">
+            <div class="track">
                 <div class="user-card">
                     <div class="flex">
                         <div class="avatar">

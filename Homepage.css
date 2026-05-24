@@ -1,3 +1,17 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 :root {
     --primary-navy: #0F172A;
     --intelliDu-blue: #2563EB;
@@ -84,6 +98,9 @@ body {
 
 header {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -91,6 +108,119 @@ header {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--hero-background);
     z-index: 1000;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        color: var(--white-cards);
+        display: flex;
+        align-items: center;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.92);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 80px 30px;
+    z-index: 9999;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 12px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-dropdown {
+    margin: 10px 0;
+}
+
+.dropdown-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mobile-dropdown.active .dropdown-btn {
+    color: var(--orange-cta);
+}
+
+.collapsible-content {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+
+    transform: translateY(-5px);
+    transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease;
+
+    padding-left: 15px;
+}
+
+.mobile-dropdown.active .collapsible-content {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .logo {
@@ -226,6 +356,7 @@ header {
 
 
 .hero {
+    width: 100%;
     color: var(--white-cards);
     padding: 100px 50px 0;
     background-image: url("image/background.png");
@@ -240,15 +371,25 @@ header {
     }
 
     .title {
-        font-size: 300%;
+        width: 100%;
+        font-size: 50px;
         font-weight: 700;
         margin: 10px auto;
     }
 
     .subtitle {
-        font-size: 150%;
+        max-width: 100%;
+        font-size: 30px;
         font-weight: 500;
         margin: 10px auto;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .features-container {
+        display: flex;
     }
 
     .features {
@@ -258,8 +399,55 @@ header {
 }
 
 @media (max-width: 768px) {
+    .tag.blue {
+        display: none;
+    }
+
     .hero {
         background: var(--hero-background);
+        padding: 50px 10px;
+
+        .hero-main {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .hero-main>div {
+            max-width: 100%;
+        }
+
+        .main-left {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 40px;
+            width: 100%;
+        }
+
+        .subtitle {
+            max-width: 100%;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 10px auto;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+    }
+
+    .hero-btn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .band-score-btn {
+        width: 100% !important;
     }
 
     .overall-score-card {
@@ -268,6 +456,22 @@ header {
 
     .skill-card-container {
         display: none !important;
+    }
+
+    .features-container {
+        display: none !important;
+    }
+
+    .user-rating {
+        display: none !important;
+    }
+
+    .cta-btn-lg {
+        width: 100% !important;
+    }
+
+    .band-score-btn {
+        width: 100% !important;
     }
 }
 
@@ -438,6 +642,7 @@ header {
 @media (max-width: 768px) {
     .feature-container {
         display: flex;
+        padding: 10px;
     }
 
     .ai-example {
@@ -460,9 +665,13 @@ header {
     .video-example {
         display: none !important;
     }
-    
+
     .live-class {
         display: none !important;
+    }
+
+    .list {
+        font-size: 15px;
     }
 }
 
@@ -641,6 +850,12 @@ header {
     margin: 40px;
 }
 
+@media (max-width: 768px) {
+    .stats-container {
+        display: none;
+    }
+}
+
 .stats-card {
     margin: 20px auto;
     flex: 1;
@@ -718,7 +933,17 @@ header {
 
 @media (max-width: 768px) {
     .service-card-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+
+
+        .service-card {
+            .icon {
+                width: 50px;
+                height: 50px;
+                padding: 10px;
+            }
+        }
+
     }
 }
 
@@ -818,7 +1043,14 @@ header {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+    .user-card-container {
+        display: none;
+    }
+}
+
 .track {
+    display: flex;
     width: 100%;
     gap: 20px;
     overflow: hidden;
@@ -891,6 +1123,13 @@ header {
         font-size: 20px;
         font-weight: 700;
         margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-container {
+        padding: 10px;
+        flex-direction: column;
     }
 }
 
@@ -1014,6 +1253,14 @@ header {
     gap: 40px;
 }
 
+@media (max-width: 768px) {
+    .footer-container {
+        margin: auto 0px;
+        padding-right: 0px;
+        flex-direction: column;
+    }
+}
+
 .footer-logo {
     width: 200px
 }
@@ -1049,7 +1296,6 @@ header {
     font-weight: 500;
 }
 
-/* 底部 */
 .footer-bottom {
     margin-top: 40px;
     text-align: center;

@@ -1,3 +1,22 @@
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+});
+
+closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+});
+
+document.querySelectorAll(".mobile-dropdown .dropdown-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const parent = btn.parentElement;
+
+        parent.classList.toggle("active");
+    });
+});
+
 const circleProgress = document.getElementById("circle");
 
 let progress = 0;
