@@ -2,11 +2,12 @@ const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
 menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.remove("hidden");
+    mobileMenu.classList.add("active");
+
 });
 
 closeMenu.addEventListener("click", () => {
-    mobileMenu.classList.add("hidden");
+    mobileMenu.classList.remove("active");
 });
 
 document.querySelectorAll(".mobile-dropdown .dropdown-btn").forEach(btn => {
