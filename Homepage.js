@@ -6,22 +6,29 @@ document.addEventListener("DOMContentLoaded", () => {
     if (menuBtn && mobileMenu) {
         menuBtn.addEventListener("click", () => {
             mobileMenu.classList.add("active");
-            console.log("click");
         });
     }
 
     if (closeBtn && mobileMenu) {
         closeBtn.addEventListener("click", () => {
             mobileMenu.classList.remove("active");
-            console.log("click");
         });
     }
 
     document.querySelectorAll(".mobile-dropdown .dropdown-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-            btn.parentElement.classList.toggle("active");
+    btn.addEventListener("click", () => {
+
+        const current = btn.parentElement;
+
+        document.querySelectorAll(".mobile-dropdown").forEach(item => {
+            if (item !== current) {
+                item.classList.remove("active");
+            }
         });
+
+        current.classList.toggle("active");
     });
+});
 });
 
 const circleProgress = document.getElementById("circle");
