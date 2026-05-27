@@ -1,20 +1,26 @@
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const closeBtn = document.getElementById("closeBtn");
 
-menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.add("active");
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.add("active");
+            console.log("click");
+        });
+    }
 
-});
+    if (closeBtn && mobileMenu) {
+        closeBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+            console.log("click");
+        });
+    }
 
-closeMenu.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-});
-
-document.querySelectorAll(".mobile-dropdown .dropdown-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        const parent = btn.parentElement;
-
-        parent.classList.toggle("active");
+    document.querySelectorAll(".mobile-dropdown .dropdown-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            btn.parentElement.classList.toggle("active");
+        });
     });
 });
 
